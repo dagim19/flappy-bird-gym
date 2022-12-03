@@ -63,6 +63,7 @@ class FlappyBirdEnvRGB(gym.Env):
                  pipe_gap: int = 100,
                  bird_color: str = "yellow",
                  pipe_color: str = "green",
+                 audio_on: bool = False,
                  background: Optional[str] = None) -> None:
         self.action_space = gym.spaces.Discrete(2)
         self.observation_space = gym.spaces.Box(0, 255, [*screen_size, 3])
